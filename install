@@ -1,0 +1,31 @@
+#in hyprland.config
+# kitbar
+windowrule {
+    name = "assign-kitbar"
+    match:class = ^kitbar$
+    workspace = special:kitbar silent
+    fullscreen = 0
+    opacity = 0.95
+    rounding = 10
+    center = true
+}
+
+workspace = special:kitbar, persistent:true
+
+bind = $mainMod, space, togglespecialworkspace, kitbar
+
+exec-once = PATH TO YOUR /kitbar/start.sh &
+
+#dependences
+kitty
+hyprland
+socat
+brightnessctl
+nano
+wireplumber
+bash
+tput
+stty
+rm
+nmcli
+bluetoothctl
