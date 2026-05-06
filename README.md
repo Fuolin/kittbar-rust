@@ -33,13 +33,13 @@ exec-once = ~/app/kitbar &
 Run kitbar:
 
 ```bash
-kitbar
+./kitbar
 ```
 
 If you want to use a single monitor only:
 
 ```bash
-kitbar --monitor
+./kitbar --monitor
 ```
 
 ## Build
@@ -52,21 +52,4 @@ The binary will be available at `target/release/kitbar`.
 
 ## Dependencies
 
-Key Rust crates used:
-
-| Crate | Purpose |
-|---|---|
-| aes-gcm | AES-GCM authenticated encryption |
-| x25519-dalek | Curve25519 Diffie-Hellman key exchange |
-| chrono | Date and time handling |
-| base85 | Base85 encoding |
-| bon | Builder pattern macros |
-| xdg | XDG base directory specification |
-| anstream / anstyle | Terminal styling and colors |
-| winnow | Parser combinator |
-| serde | Serialization framework |
-| zeroize | Secure memory zeroing |
-
-## License
-
-Please refer to the project source for license information.
+bash,kitty,hyprland,wpctl,brightnessctl,nmcli,bluetoothctl
